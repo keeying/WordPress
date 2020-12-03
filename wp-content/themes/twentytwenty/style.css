@@ -6469,3 +6469,30 @@ a.to-the-top > * {
 		top: 0;
 	}
 }
+.footer-nav-widgets-wrapper{
+	margin-top: 0!important;
+}
+.footer-nav-widgets-wrapper{
+	background-color: #222 !important;
+}
+#site-footer{
+	padding: 20px 0 !important;
+	background-color: #000;
+}
+.footer-widgets-outer-wrapper{
+	padding: 45px 0;
+	border-bottom: none;
+}
+#site-footer *,
+.footer-widgets-outer-wrapper *{
+	color: #eee;
+}
+.footer-widgets .widget-title{
+	font-size: 20px !important;
+}
+.footer-widgets .textwidget{
+	font-size: 16px !important;
+}
+.footer-widgets .textwidget strong{
+	margin-bottom: 10px;
+}
