@@ -19,22 +19,19 @@ if ($has_footer_menu || $has_social_menu || $has_sidebar_1 || $has_sidebar_2) {
     ?>
 
 	<div class="footer-nav-widgets-wrapper header-footer-group">
-
-		<div class="footer-inner section-inner">
+		<div class="footer-widgets-outer-wrapper container">
 			<?php if ($has_sidebar_1 || $has_sidebar_2) {?>
-				<aside class="footer-widgets-outer-wrapper" role="complementary">
-					<div class="footer-widgets-wrapper">
+					<div class="row">
 						<?php if ($has_sidebar_1) {?>
-							<div class="footer-widgets column-one grid-item">
+							<div class="col-md-6 footer-sidebar-one">
 								<?php dynamic_sidebar('sidebar-1');?>
 							</div>
 						<?php }?>
 						<?php if ($has_sidebar_2) {?>
-							<div class="footer-widgets column-two grid-item">
+							<div class="col-md-6 footer-menu-container">
 								<?php dynamic_sidebar('sidebar-2');?>
 							</div>
 						<?php }?>
-					</div><!-- .footer-widgets-wrapper -->
 				</aside><!-- .footer-widgets-outer-wrapper -->
 			<?php }?>
 		</div><!-- .footer-inner -->

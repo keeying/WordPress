@@ -16,33 +16,8 @@
 $full_image_url = wp_get_attachment_image_src(get_post_thumbnail_id($post->ID), 'full');
 ?>
 <style  type="text/css">
-	#site-content{
-		background-color:#fff;
-	}
 	.page-header-container{
-		height: 240px;
 		background: transparent url(<?php echo $full_image_url[0] ?>) no-repeat center;
-		background-size: cover;
-	}
-	.page-title,
-	.page-header-inner{
-		height: 100%;
-		font-size: 48px;
-		line-height: 240px;
-		text-align: center;
-		margin: 0 auto;
-		color:#fff;
-	}
-	.page-header-inner{
-		background-color: rgba(0,0,0,.4);
-	}
-	.page-content{
-		margin: 45px auto 65px;
-		font-size: 16px;
-		line-height: 1.6;
-	}
-	.page-content img{
-		max-width: 100%;
 	}
 </style>
 <?php

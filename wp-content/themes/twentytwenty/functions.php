@@ -260,6 +260,7 @@ function twentytwenty_menus() {
 		'mobile'   => __( 'Mobile Menu', 'twentytwenty' ),
 		'footer'   => __( 'Footer Menu', 'twentytwenty' ),
 		'social'   => __( 'Social Menu', 'twentytwenty' ),
+		'page'   => __( '关于我们菜单', 'twentytwenty' ),
 	);
 
 	register_nav_menus( $locations );

@@ -13,15 +13,17 @@
  * @subpackage Twenty_Twenty
  * @since Twenty Twenty 1.0
  */?>
-<style type="text/css">
+	<style type="text/css">
 		.page-header-container{
 			background: transparent url(/wp-content/uploads/2020/12/0144b85c90a16ea8012141689d04ff.jpg@2o.jpg) no-repeat center;
 	}
 </style>
-<?php get_header();?>
+<?php
+get_header();
+?>
 
 <main id="site-content" role="main">
-<header class="page-header-container">
+	<header class="page-header-container">
 			<div class="page-header-inner">
 			<h1 class="page-title"><?php echo substr(get_the_archive_title(), 9); ?></h1>
 			</div><!-- .archive-header-inner -->
@@ -30,10 +32,10 @@
 			<div class="container">
 				<div class="row">
 				<?php if (have_posts()) {
-    while (have_posts()) {
-        the_post();
-        get_template_part('template-parts/content-news', get_post_type());
-    }}?>
+			while (have_posts()) {
+					the_post();
+					get_template_part('template-parts/content-product', get_post_type());
+			}}?>
 				</div>
 			</div>
 		</div>
