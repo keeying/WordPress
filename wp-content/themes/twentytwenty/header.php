@@ -32,10 +32,12 @@
 			<div class="header-inner section-inner">
 				<div class="container">
 					<div class="row">
-					<div class="col-md-6">
-						<?php twentytwenty_site_logo();?>
+					<div class="col-md-5">
+						<div class="row">
+							<?php twentytwenty_site_logo();?>
+						</div>
 					</div><!-- .header-titles -->
-					<div class="col-md-6">
+					<div class="col-md-7">
 						<ul class="nav navbar-nav primary-menu pull-right">
 							<?php	wp_nav_menu(
     array(
